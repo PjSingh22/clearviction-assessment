@@ -19,11 +19,8 @@ function handleSubmit(e) {
       "Content-Type": "application/json"
     }
   })
-    .then(res => console.log(res))
+    .then(res => console.log("res", res))
     .catch(err => console.log("err", err))
-
-
-
 }
 
 submitButton.addEventListener('click', handleSubmit)
